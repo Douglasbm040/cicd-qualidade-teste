@@ -13,7 +13,8 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v3
         with:
-          java-version: '11'  # ou a versão do JDK que você está usando
+          java-version: '11' # versão do JDK
+          distribution: 'temurin' # distribuição do JDK (temurin, zulu, etc.)
 
       - name: Build with Maven
         run: mvn install
