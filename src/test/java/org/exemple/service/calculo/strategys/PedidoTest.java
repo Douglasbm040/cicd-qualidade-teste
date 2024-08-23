@@ -11,7 +11,7 @@ public class PedidoTest {
     public void testDescontoFixo() {
         Pedido pedido = new Pedido(100.0);
         pedido.setDescontoStrategy(new DescontoFixo(20.0));
-        assertEquals(80.0, pedido.calcularPrecoFinal());
+        assertEquals(80.00, pedido.calcularPrecoFinal());
     }
 
     @Test
